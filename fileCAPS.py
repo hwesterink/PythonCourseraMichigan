@@ -1,5 +1,7 @@
 # Use words.txt as the file name
-fname = raw_input("Use words.txt as the file name\nEnter file name: ")
+fname = raw_input("File name defaults to words.txt\nEnter file name: ")
+if len(fname) == 0 :
+    fname = "words.txt"
 try :
     fhandle = open(fname)
 except :

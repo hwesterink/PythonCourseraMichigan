@@ -4,7 +4,9 @@ total = 0
 
 # Open the file to be processed
 # Use the file name mbox-short.txt as the file name
-fname = raw_input("Use mbox-short.txt as the file name\nEnter file name: ")
+fname = raw_input("File name defaults to mbox-short.txt\nEnter file name: ")
+if len(fname) == 0 :
+    fname = "mbox-short.txt"
 try :
     fhandle = open(fname)
 except :
@@ -20,6 +22,9 @@ for line in fhandle :
     floatvalue = float(strvalue)
     count += 1
     total += floatvalue
+
+# Close the file
+fhandle.close()
 
 # Compute and display the average SPAM-confidence
 if count != 0 :
