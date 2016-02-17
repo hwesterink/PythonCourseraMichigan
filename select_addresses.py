@@ -24,5 +24,5 @@ for line in fhandle :
 # Close the file
 fhandle.close()
 
-# Sort list and print the result
+# Print the count for the selected lines
 print "There were", count, "lines in the file with From as the first word"
