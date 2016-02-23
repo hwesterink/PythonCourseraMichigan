@@ -27,9 +27,8 @@ for line in fhandle :
 # Close the file
 fhandle.close()
 
-# If lines are selected move the resulting counters into a list and sort
-
-# Print the result of the selection
+# If lines are selected move the resulting counters into a list and sort,
+# print the hours and the counts
 if not lines_selected :
     print "===> Input error: There are no 'From ' lines in the file."
 else :
