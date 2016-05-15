@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 total = 0
 
-url_choice = raw_input("Which file do you want to open?\n 1 = comments_42.html\n 2 = comments_238859.html\n")
+url_choice = raw_input("Which file do you want to open?\n 1 = comments_42.xml\n 2 = comments_238859.xml\n")
 if url_choice == "1":
     url = "http://python-data.dr-chuck.net/comments_42.xml"
 elif url_choice == "2":

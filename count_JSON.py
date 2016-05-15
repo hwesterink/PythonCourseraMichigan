@@ -3,7 +3,7 @@ import json
 
 total = 0
 
-url_choice = raw_input("Which file do you want to open?\n 1 = comments_42.html\n 2 = comments_238863.html\n")
+url_choice = raw_input("Which file do you want to open?\n 1 = comments_42.json\n 2 = comments_238863.json\n")
 if url_choice == "1":
     url = "http://python-data.dr-chuck.net/comments_42.json"
 elif url_choice == "2":
