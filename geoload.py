@@ -26,7 +26,7 @@ count = 1
 
 for line in fhandle:
     # Stop after 5 addresses have been retrieved
-    if count > 5 : break
+    if count > 200 : break
 
     # Check whether the address is already in the database, if so skip it
     address = line.strip()
@@ -64,7 +64,7 @@ for line in fhandle:
             VALUES ( ?, ? )''', ( buffer(address),buffer(data) ) )
     conn.commit() 
 
-    # Wait 1 second before moving tp the next line
+    # Wait 1 second before moving to the next line
     time.sleep(1)
 
 # Close the database and the file
